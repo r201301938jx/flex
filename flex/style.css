@@ -5,20 +5,62 @@
 }
 
 .header {
-	background-color: pink;
+	background-color: #ff00ff;
 	padding: 30px 20px;
 	display: flex;
 	justify-content: flex-end;
 }
 
+.header > div {
+	background-color: #fbb3ff;
+	height: 70px;
+	width: 140px;
+	margin: 0 10px;
+}
 
 .header > :first-child {
 	margin-right: auto;
 }
 
-.header > div {
-	background-color: #fbb3ff;
-	height: 70px;
-	flex-basis: 140px;
-	margin: 0 10px;
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+.sidebar {
+	width: 300px;
+	background-color: #d8ffb6;
+}
+
+.content {
+	display: flex;
+	max-width: 700px;
+	flex-grow: 1;
+	padding: 20px;
+	background-color: #00b522;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.content > div {
+	flex-basis: 200px;
+	height: 130px;
+	margin: 10px;
+	background-color: #fff75a;
+}
+
+.footer {
+	display: flex;
+	padding: 20px;
+	background-color: #52a1ff;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.footer > div {
+	width: 45%;
+	max-width: 600px;
+	height: 40px;
+	margin: 10px;
+	background-color: #b6e7ff;
 }
